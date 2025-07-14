@@ -22,7 +22,7 @@ class TextStyles {
 
   // Estilo para textos comuns
   static const TextStyle bodyLarge = TextStyle(
-    fontSize: 48,
+    fontSize: 14,
     fontFamily: 'Montserrat',
     color: AppColors.textPrimary,
   );

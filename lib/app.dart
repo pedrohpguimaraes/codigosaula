@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'presentation/pages/stack/home_page3.dart';
-//import 'presentation/pages/text/horaDePraticar1/Atividade1.dart';
-// import 'presentation/pages/text/horaDePraticar1/Atividade2.dart';
-import 'presentation/pages/text/horaDePraticar1/Atividade3.dart';
+import 'package:myapp/presentation/pages/botoes/elevatedbutton/home_page2.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,8 +12,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      // home: HomePage(),
-      home: Atividade3(),
+       home: HomePage(),
+     // home: Atividade3(),
     );
   }
 }
