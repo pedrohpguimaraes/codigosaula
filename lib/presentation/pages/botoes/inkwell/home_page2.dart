@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/core/theme/colors.dart';
+import 'package:myapp/core/theme/text_styles.dart';
 
 void main() => runApp(const HomePage());
 
@@ -9,6 +11,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'InkWell - Exemplo 1',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const InkWellExampleHome(),
     );
@@ -28,8 +31,13 @@ class _InkWellExampleHomeState extends State<InkWellExampleHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('InkWell com Animação'),
+      backgroundColor:AppColors.backgroundColorScaffold,
+      appBar:  AppBar(
+       backgroundColor: Colors.deepPurple,
+        title: Text("InkWell - Exemplo 2",
+        style: TextStyles.appBarTitle,
+        ),
+        centerTitle: true,
       ),
       body: Center(
         child: AnimatedContainer(
