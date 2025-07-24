@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'InkWell - Exemplo 1',
+      title: 'InkWell - Exemplo 2',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.deepPurple),
       home: const InkWellExampleHome(),
@@ -31,12 +31,10 @@ class _InkWellExampleHomeState extends State<InkWellExampleHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:AppColors.backgroundColorScaffold,
-      appBar:  AppBar(
-       backgroundColor: Colors.deepPurple,
-        title: Text("InkWell - Exemplo 2",
-        style: TextStyles.appBarTitle,
-        ),
+      backgroundColor: AppColors.backgroundColorScaffold,
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: Text("InkWell - Exemplo 2", style: TextStyles.appBarTitle),
         centerTitle: true,
       ),
       body: Center(
